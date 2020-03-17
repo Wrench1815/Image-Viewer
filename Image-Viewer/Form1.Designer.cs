@@ -102,6 +102,7 @@
 			this.changeBackgroundColorToolStripMenuItem.Name = "changeBackgroundColorToolStripMenuItem";
 			this.changeBackgroundColorToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
 			this.changeBackgroundColorToolStripMenuItem.Text = "Change Background Color";
+			this.changeBackgroundColorToolStripMenuItem.Click += new System.EventHandler(this.changeBackgroundColorToolStripMenuItem_Click);
 			// 
 			// clearImageToolStripMenuItem
 			// 
