@@ -16,5 +16,25 @@ namespace Image_Viewer
 		{
 			InitializeComponent();
 		}
+
+		private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void openImageToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void clearImageToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			pictureBox1.Image = null;
+		}
+
+		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

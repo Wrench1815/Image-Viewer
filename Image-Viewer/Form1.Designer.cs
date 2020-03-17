@@ -36,6 +36,8 @@
 			this.changeBackgroundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clearImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.tableLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.menuStrip1.SuspendLayout();
@@ -86,12 +88,14 @@
 			this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
 			this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
 			this.menuToolStripMenuItem.Text = "Menu";
+			this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
 			// 
 			// openImageToolStripMenuItem
 			// 
 			this.openImageToolStripMenuItem.Name = "openImageToolStripMenuItem";
 			this.openImageToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
 			this.openImageToolStripMenuItem.Text = "Open Image";
+			this.openImageToolStripMenuItem.Click += new System.EventHandler(this.openImageToolStripMenuItem_Click);
 			// 
 			// changeBackgroundColorToolStripMenuItem
 			// 
@@ -104,12 +108,23 @@
 			this.clearImageToolStripMenuItem.Name = "clearImageToolStripMenuItem";
 			this.clearImageToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
 			this.clearImageToolStripMenuItem.Text = "Clear Image";
+			this.clearImageToolStripMenuItem.Click += new System.EventHandler(this.clearImageToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
 			this.exitToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
+			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+			// 
+			// colorDialog1
+			// 
+			this.colorDialog1.Color = System.Drawing.Color.White;
+			// 
+			// openFileDialog1
+			// 
+			this.openFileDialog1.FileName = "Image File";
+			this.openFileDialog1.Title = "Open Image";
 			// 
 			// Form1
 			// 
@@ -139,6 +154,8 @@
 		private System.Windows.Forms.ToolStripMenuItem changeBackgroundColorToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem clearImageToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+		private System.Windows.Forms.ColorDialog colorDialog1;
+		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 	}
 }
 
