@@ -26,7 +26,7 @@ namespace Image_Viewer
 		{
 			if(openFileDialog1.ShowDialog()== DialogResult.OK )
 			{
-				pictureBox1.Load(openFileDialog1.FileName
+				pictureBox1.Load(openFileDialog1.FileName);
 			}
 		}
 
